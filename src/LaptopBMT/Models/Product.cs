@@ -7,7 +7,6 @@ namespace LaptopBMT.Models
         [Key]
         public int ProductId { get; set; }
 
-
         [Display(Name = "Tên sản phẩm")]
         public string? Name { get; set; }
 
@@ -19,5 +18,10 @@ namespace LaptopBMT.Models
 
         [Display(Name = "Ảnh")]
         public string? ImageUrl { get; set; }
+        
+        // Navigation : 1 Product có nhiều OrderDetail
+        public ICollection<OrderDetail> OrderDetails { get; set; } = new List<OrderDetail>();
+        // Navigation : 1 Product có nhiều CartItem
+        public ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
     }
 }

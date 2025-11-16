@@ -33,7 +33,7 @@ namespace LaptopBMT.Areas.Admin.Controllers
 
             return View();
         }
-
+        // ✅ POST Thêm người dùng
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create(User user)
@@ -57,7 +57,7 @@ namespace LaptopBMT.Areas.Admin.Controllers
             return View(user);
         }
 
-        // ⭐ [ĐÃ CẬP NHẬT] - Thêm IFormFile? AvatarFile và xử lý logic
+        // Thêm IFormFile? AvatarFile và xử lý logic
         [HttpPost]
         [ValidateAntiForgeryToken] // Thêm để bảo mật
         public async Task<IActionResult> Edit(int id, string newPassword, User user, IFormFile? AvatarFile)
@@ -78,13 +78,10 @@ namespace LaptopBMT.Areas.Admin.Controllers
             // Nếu có nhập mật khẩu mới thì mới đổi
             if (!string.IsNullOrWhiteSpace(newPassword))
             {
-                // ⚠️ CẢNH BÁO BẢO MẬT: 
-                // Bạn đang lưu mật khẩu rõ (clear-text). 
-                // Bạn PHẢI hash (mã hóa) mật khẩu này trước khi lưu vào DB.
+                // PHẢI hash (mã hóa) mật khẩu này trước khi lưu vào DB.
                 existingUser.PasswordHash = newPassword;
             }
-
-            // === LOGIC XỬ LÝ AVATAR (Lấy từ action Profile của bạn) ===
+            // LOGIC XỬ LÝ AVATAR (Lấy từ action Profile )
             if (AvatarFile != null && AvatarFile.Length > 0)
             {
                 // Xóa ảnh cũ nếu có
@@ -122,7 +119,6 @@ namespace LaptopBMT.Areas.Admin.Controllers
 
             return RedirectToAction("Index");
         }
-
 
         // ✅ Xóa người dùng
         [HttpGet]

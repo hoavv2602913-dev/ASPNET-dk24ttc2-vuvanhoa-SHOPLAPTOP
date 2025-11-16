@@ -1,5 +1,5 @@
 ﻿using LaptopBMT.Data;
-using LaptopBMT.Models; // 🔹 Đảm bảo namespace đúng
+using LaptopBMT.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
@@ -29,7 +29,6 @@ namespace LaptopBMT.Areas.Admin.Controllers
         // ✅ Xem chi tiết đơn hàng
         public IActionResult Details(int id)
         {
-            // 🔹 Đổi từ o.Id -> o.OrderId
             var order = _context.Orders
                 .FirstOrDefault(o => o.OrderId == id);
 

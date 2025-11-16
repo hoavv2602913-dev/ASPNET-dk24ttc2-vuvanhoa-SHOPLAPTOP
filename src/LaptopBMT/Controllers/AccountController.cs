@@ -97,10 +97,7 @@ namespace LaptopBMT.Controllers
             return View(user); // Trả về view với dữ liệu đã được cập nhật
         }
 
-
-        // (Các action khác: Login, Register, Logout... giữ nguyên như cũ)
-        
-        #region Login, Register, Logout (Code cũ)
+        #region Login, Register, Logout 
 
         // ✅ Trang đăng nhập
         [HttpGet]

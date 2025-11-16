@@ -21,7 +21,7 @@ namespace LaptopBMT.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Quan hệ giữa User và Cart (1 User có nhiều Cart)
+            // Quan hệ giữa User và Cart (1 - nhiều)
             modelBuilder.Entity<Cart>()
                 .HasOne(c => c.User)               // ✅ liên kết tới entity User
                 .WithMany(u => u.Carts)            // ✅ 1 user có nhiều carts
@@ -40,20 +40,15 @@ namespace LaptopBMT.Data
             // ===============================
             // Quan hệ giữa CartItem và Product (1 - nhiều)
             // ===============================
-            modelBuilder.Entity<CartItem>()
-                .HasOne(ci => ci.Product) // ❌ Cũ
-                .WithMany()
-                .HasForeignKey(ci => ci.ProductId)
-                .OnDelete(DeleteBehavior.Cascade);
-            // ✅ Sửa thành:
+            
             modelBuilder.Entity<CartItem>()
                 .HasOne(ci => ci.Product)
-                .WithMany()
+                .WithMany(p => p.CartItems)
                 .HasForeignKey(ci => ci.ProductId)
                 .OnDelete(DeleteBehavior.Cascade);
 
             // ===============================
-            // Quan hệ giữa User và Order (1 - nhiều)
+            // Quan hệ giữa Order và OrderDetail (1 - nhiều)
             // ===============================
             modelBuilder.Entity<Order>()
                 .HasMany<OrderDetail>(o => o.OrderDetails)
@@ -66,9 +61,9 @@ namespace LaptopBMT.Data
             // ===============================
             modelBuilder.Entity<OrderDetail>()
                 .HasOne(od => od.Product)
-                .WithMany()
+                .WithMany(p => p.OrderDetails)
                 .HasForeignKey(od => od.ProductId)
-                .OnDelete(DeleteBehavior.Cascade);
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

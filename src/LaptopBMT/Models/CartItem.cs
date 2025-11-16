@@ -9,17 +9,20 @@ namespace LaptopBMT.Models
         [Key]
         public int CartItemId { get; set; }
 
-        [ForeignKey("CartId")]
+        // Khóa ngoại
         public int CartId { get; set; }
 
-        [ForeignKey("ProductId")]
+        // Khóa ngoại
         public int ProductId { get; set; }
+
+        // Navigation: Thuộc tính điều hướng bên Một (có thể rỗng)
         public Product? Product { get; set; }
 
         public int Quantity { get; set; }
         public decimal UnitPrice { get; set; }
         public string? ImageUrl { get; set; }
-        // Navigation
+
+        // Navigation: Thuộc tính điều hướng bên Một (có thể rỗng)
         public Cart? Cart { get; set; }
     }
 }

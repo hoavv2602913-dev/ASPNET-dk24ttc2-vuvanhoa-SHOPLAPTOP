@@ -21,7 +21,7 @@ namespace LaptopBMT.Controllers
             // 🔥 Lấy UserId từ Session
             var userId = HttpContext.Session.GetInt32("UserId");
             if (userId == null)
-                return RedirectToAction("Login", "Account");
+                return RedirectToAction("Login", "Account"); // nếu chưa đăng nhập, quay về trang login
 
             var laptop = _context.Products.FirstOrDefault(l => l.ProductId == laptopId);
             if (laptop == null) return NotFound();
@@ -132,7 +132,6 @@ namespace LaptopBMT.Controllers
             _context.SaveChanges();
             // Sau khi tạo đơn hàng thành công
             return RedirectToAction("Success", "Cart", new { orderId = order.OrderId });
-
         }
 
         // ✅ Trang sau thanh toán thành công

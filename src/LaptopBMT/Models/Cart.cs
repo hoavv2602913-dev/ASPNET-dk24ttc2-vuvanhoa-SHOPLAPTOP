@@ -9,14 +9,18 @@ namespace LaptopBMT.Models
     {
         [Key]
         public int CartId { get; set; }
-        [ForeignKey("User")]
-        public int UserId { get; set; }   // Khóa ngoại
 
-        public User? User { get; set; }    // Điều hướng tới entity User
+        // Khóa ngoại
+        public int UserId { get; set; }   
 
+        // Thuộc tính điều hướng bên Một (có thể rỗng)
+        public User? User { get; set; }    
         public string? UserName { get; set; }
+
         // ✅ Đánh dấu giỏ hàng đã thanh toán hay chưa
         public bool IsCheckedOut { get; set; } = false;
+
+        // Navigation: Thuộc tính điều hướng bên Nhiều
         public ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
 
         public DateTime? CreatedAt { get; set; } = DateTime.Now;

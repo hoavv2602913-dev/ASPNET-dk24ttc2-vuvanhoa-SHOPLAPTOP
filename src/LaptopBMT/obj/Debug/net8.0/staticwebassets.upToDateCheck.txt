@@ -85,6 +85,6 @@ wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
 wwwroot\uploads\avatars\1c705571-5b48-4668-91b2-6f7c7cd919dc.jpg
 wwwroot\uploads\avatars\ad3ac2a9-467e-4db5-a2b0-c15555dcf065.JPG
-wwwroot\uploads\avatars\c71ec345-20aa-4ba3-bf82-5f63927b3049.JPG
+wwwroot\uploads\avatars\30d781ee-a5e1-406b-b08a-53d6af8c1fc1.jpg
 wwwroot\uploads\avatars\cf0789cd-aef1-49f9-8fc8-76f1c2b1bda8.jpg
 wwwroot\uploads\avatars\ec47cf42-f2a6-4c4f-ae1f-8db414cb8410.jpg
