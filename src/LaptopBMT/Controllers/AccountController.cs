@@ -14,10 +14,10 @@ namespace LaptopBMT.Controllers
         public AccountController(AppDbContext context, IWebHostEnvironment environment)
         {
             _context = context;
-            _environment = environment; // Inject
+            _environment = environment;
         }
 
-        // ✅ 3. Sửa [HttpGet] Profile để luôn lấy data mới nhất từ DB
+        // ✅ 3.[HttpGet] Profile để luôn lấy data mới nhất từ DB
         [HttpGet]
         public IActionResult Profile()
         {
@@ -37,7 +37,7 @@ namespace LaptopBMT.Controllers
             return View(user);
         }
 
-        // ✅ 4. Sửa [HttpPost] Profile để nhận và xử lý file
+        // ✅ 4.[HttpPost] Profile để nhận và xử lý file
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Profile(User model, IFormFile? AvatarFile, string? removeAvatar)
@@ -85,7 +85,7 @@ namespace LaptopBMT.Controllers
                 // Cập nhật tên file mới vào DB
                 user.AvatarUrl = fileName;
             }
-            // (Nếu không chọn file mới, nó sẽ tự động giữ nguyên avatar cũ)
+            // (Nếu không chọn file mới, sẽ tự động giữ nguyên avatar cũ)
 
             // Lưu tất cả thay đổi vào DB
             await _context.SaveChangesAsync();
@@ -143,7 +143,7 @@ namespace LaptopBMT.Controllers
             var user = new User
             {
                 UserName = username,
-                PasswordHash = password, // 📌 Nhớ mã hóa mật khẩu này
+                PasswordHash = password, // mã hóa mật khẩu
                 FullName = fullname,
                 Email = email,
                 Role = "User",
