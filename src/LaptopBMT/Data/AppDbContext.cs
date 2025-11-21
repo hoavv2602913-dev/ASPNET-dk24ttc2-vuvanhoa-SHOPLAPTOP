@@ -38,7 +38,7 @@ namespace LaptopBMT.Data
                 .OnDelete(DeleteBehavior.Cascade);
 
             // ===============================
-            // Quan hệ giữa CartItem và Product (1 - nhiều)
+            // Quan hệ giữa Product và CartItem  (1 - nhiều)
             // ===============================
             
             modelBuilder.Entity<CartItem>()
@@ -57,7 +57,7 @@ namespace LaptopBMT.Data
                 .OnDelete(DeleteBehavior.Cascade);
 
             // ===============================
-            // Quan hệ giữa OrderDetail và Product (1 - nhiều)
+            // Quan hệ giữa Product và OrderDetail (1 - nhiều)
             // ===============================
             modelBuilder.Entity<OrderDetail>()
                 .HasOne(od => od.Product)
