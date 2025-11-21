@@ -51,8 +51,8 @@ namespace LaptopBMT.Data
             // Quan hệ giữa Order và OrderDetail (1 - nhiều)
             // ===============================
             modelBuilder.Entity<Order>()
-                .HasMany<OrderDetail>(o => o.OrderDetails)
                 .WithOne(od => od.Order)
+                .HasMany<OrderDetail>(o => o.OrderDetails)
                 .HasForeignKey(od => od.OrderId)
                 .OnDelete(DeleteBehavior.Cascade);
 
