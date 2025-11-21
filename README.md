@@ -42,4 +42,5 @@
 > Ngày cập nhật: ** 28/10/2025 : Thực hành tạo các chức năng giao diện, thêm, sửa sản phẩm lưu vào CSDL **.  
 > Ngày cập nhật: ** 8/11/2025 : Thực hành tạo các chức năng giao diện đặt hàng lưu vào CSDL **.  
 > Ngày cập nhật: ** 12/11/2025 : Upload code lên /src **.  
+> Ngày cập nhật: ** 21/11/2025 : Upload BC CĐ ASPNET VuVanHoa_170124242_DK24TTC2 lên /progress-report **.  
 ---
