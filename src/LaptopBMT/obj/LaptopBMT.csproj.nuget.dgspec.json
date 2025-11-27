@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HOAVV\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\LaptopBMT.csproj": {}
+    "C:\\Users\\CSVC\\OneDrive\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\LaptopBMT.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HOAVV\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\LaptopBMT.csproj": {
+    "C:\\Users\\CSVC\\OneDrive\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\LaptopBMT.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HOAVV\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\LaptopBMT.csproj",
+        "projectUniqueName": "C:\\Users\\CSVC\\OneDrive\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\LaptopBMT.csproj",
         "projectName": "LaptopBMT",
-        "projectPath": "C:\\Users\\HOAVV\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\LaptopBMT.csproj",
-        "packagesPath": "C:\\Users\\HOAVV\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HOAVV\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\obj\\",
+        "projectPath": "C:\\Users\\CSVC\\OneDrive\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\LaptopBMT.csproj",
+        "packagesPath": "C:\\Users\\CSVC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CSVC\\OneDrive\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\HOAVV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CSVC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

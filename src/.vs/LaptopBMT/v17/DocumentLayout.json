@@ -1,24 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\HOAVV\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{59AF9A86-5278-4E79-9BF3-785038892DBB}|LaptopBMT\\LaptopBMT.csproj|c:\\users\\hoavv\\documents\\github\\aspnet-dk24ttc2-vuvanhoa-hoavv\\src\\laptopbmt\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59AF9A86-5278-4E79-9BF3-785038892DBB}|LaptopBMT\\LaptopBMT.csproj|solutionrelative:laptopbmt\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59AF9A86-5278-4E79-9BF3-785038892DBB}|LaptopBMT\\LaptopBMT.csproj|c:\\users\\hoavv\\documents\\github\\aspnet-dk24ttc2-vuvanhoa-hoavv\\src\\laptopbmt\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59AF9A86-5278-4E79-9BF3-785038892DBB}|LaptopBMT\\LaptopBMT.csproj|solutionrelative:laptopbmt\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59AF9A86-5278-4E79-9BF3-785038892DBB}|LaptopBMT\\LaptopBMT.csproj|c:\\users\\hoavv\\documents\\github\\aspnet-dk24ttc2-vuvanhoa-hoavv\\src\\laptopbmt\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59AF9A86-5278-4E79-9BF3-785038892DBB}|LaptopBMT\\LaptopBMT.csproj|solutionrelative:laptopbmt\\models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59AF9A86-5278-4E79-9BF3-785038892DBB}|LaptopBMT\\LaptopBMT.csproj|c:\\users\\hoavv\\documents\\github\\aspnet-dk24ttc2-vuvanhoa-hoavv\\src\\laptopbmt\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59AF9A86-5278-4E79-9BF3-785038892DBB}|LaptopBMT\\LaptopBMT.csproj|solutionrelative:laptopbmt\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\CSVC\\OneDrive\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -26,59 +9,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CartItem.cs",
-              "DocumentMoniker": "C:\\Users\\HOAVV\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\Models\\CartItem.cs",
-              "RelativeDocumentMoniker": "LaptopBMT\\Models\\CartItem.cs",
-              "ToolTip": "C:\\Users\\HOAVV\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\Models\\CartItem.cs",
-              "RelativeToolTip": "LaptopBMT\\Models\\CartItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T05:59:46.283Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "C:\\Users\\HOAVV\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\Models\\Cart.cs",
-              "RelativeDocumentMoniker": "LaptopBMT\\Models\\Cart.cs",
-              "ToolTip": "C:\\Users\\HOAVV\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\Models\\Cart.cs",
-              "RelativeToolTip": "LaptopBMT\\Models\\Cart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T05:56:59.984Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderDetail.cs",
-              "DocumentMoniker": "C:\\Users\\HOAVV\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\Models\\OrderDetail.cs",
-              "RelativeDocumentMoniker": "LaptopBMT\\Models\\OrderDetail.cs",
-              "ToolTip": "C:\\Users\\HOAVV\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\Models\\OrderDetail.cs",
-              "RelativeToolTip": "LaptopBMT\\Models\\OrderDetail.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T05:54:47.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\HOAVV\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "LaptopBMT\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\HOAVV\\Documents\\GitHub\\ASPNET-dk24ttc2-vuvanhoa-Hoavv\\src\\LaptopBMT\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "LaptopBMT\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAA8wEEAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T04:20:31.541Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Bookmark",
