@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Bảng điều khiển";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row">
+    <!-- Người dùng -->
+    <div class="col-md-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-primary">
+                    <i class="fa fa-users"></i> Người dùng
+                </h5>
+                <p class="card-text">Xem và quản lý danh sách người dùng.</p>
+                <a asp-area="Admin" asp-controller="Users" asp-action="Index"
+                   class="btn btn-primary btn-sm">
+                    <i class="fa fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sản phẩm -->
+    <div class="col-md-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-success">
+                    <i class="fa fa-box"></i> Sản phẩm
+                </h5>
+                <p class="card-text">Quản lý danh mục sản phẩm của shop.</p>
+                <a asp-area="Admin" asp-controller="AdminProduct" asp-action="Index"
+                   class="btn btn-warning btn-sm text-white">
+                    <i class="fa fa-eye"></i> Xem chi tiết
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Đơn hàng -->
+    <div class="col-md-4">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title text-warning">
+                    <i class="fa fa-receipt"></i> Đơn hàng
+                </h5>
+                <p class="card-text">Xem và xử lý các đơn hàng mới.</p>
+                <a asp-area="Admin" asp-controller="AdminOrder" asp-action="Index"
+                   class="btn btn-warning btn-sm text-white">
+                    <i class="fa fa-eye"></i> Xem chi tiết
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

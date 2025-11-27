@@ -1,0 +1,35 @@
+﻿@model IEnumerable<LaptopBMT.Models.User>
+@{
+    ViewData["Title"] = "Trang quản trị";
+}
+
+<h2 class="text-center text-danger mb-4">👑 Trang quản trị Admin</h2>
+
+<div class="mb-3">
+    <a asp-controller="AdminProduct" asp-action="Index" class="btn btn-primary">Quản lý sản phẩm</a>
+    <a asp-controller="Account" asp-action="Logout" class="btn btn-danger">Đăng xuất</a>
+</div>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Tên đăng nhập</th>
+            <th>Họ tên</th>
+            <th>Email</th>
+            <th>Quyền</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserId</td>
+                <td>@user.UserName</td>
+                <td>@user.FullName</td>
+                <td>@user.Email</td>
+                <td>@user.Role</td>
+            </tr>
+        }
+    </tbody>
+</table>

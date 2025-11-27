@@ -1,0 +1,75 @@
+﻿@using System.Linq
+@using System.Collections.Generic
+
+@{
+    ViewData["Title"] = "Bảng điều khiển Admin";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-primary mb-4">📊 Bảng điều khiển Quản trị</h2>
+
+    <div class="row text-center">
+        <div class="col-md-3">
+            <div class="card border-primary shadow-sm mb-4">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Người dùng</h5>
+                    <h2>@ViewBag.TotalUsers</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card border-success shadow-sm mb-4">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Sản phẩm</h5>
+                    <h2>@ViewBag.TotalProducts</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card border-warning shadow-sm mb-4">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">Đơn hàng</h5>
+                    <h2>@ViewBag.TotalOrders</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card border-danger shadow-sm mb-4">
+                <div class="card-body">
+                    <h5 class="card-title text-danger">Doanh thu</h5>
+                    <h2>@ViewBag.TotalRevenue ₫</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="text-center mt-5 mb-3">📈 Doanh thu theo tháng</h4>
+    <canvas id="revenueChart" height="120"></canvas>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('revenueChart');
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [@string.Join(",", ((IEnumerable<dynamic>)ViewBag.MonthlyRevenue ?? new List<dynamic>()).Select(m => $"'{m.Month}'"))],
+                datasets: [{
+                    label: 'Doanh thu (₫)',
+                    data: [@string.Join(",", ((IEnumerable<dynamic>)ViewBag.MonthlyRevenue ?? new List<dynamic>()).Select(m => m.Revenue))],
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+    </script>
+}

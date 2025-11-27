@@ -1,0 +1,65 @@
+﻿@model IEnumerable<LaptopBMT.Models.Order>
+
+@{
+    ViewData["Title"] = "Quản lý đơn hàng";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2 class="mb-4 text-warning"><i class="bi bi-bag-check"></i> Danh sách đơn hàng</h2>
+
+    <table class="table table-bordered table-hover align-middle shadow-sm">
+        <thead class="table-dark">
+            <tr>
+                <th>Mã đơn</th>
+                <th>Khách hàng</th>
+                <th>Tổng tiền</th>
+                <th>Trạng thái</th>
+                <th style="width:150px;" class="text-center">Thao tác</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var order in Model)
+                {
+                    <tr>
+                        <td>@order.OrderId</td>
+                        <td>@order.User?.FullName</td>
+                        <td>@order.TotalAmount.ToString("N0") ₫</td>
+                        <td>
+                            @{
+                                var badgeClass = order.Status switch
+                                {
+                                    "Hoàn thành" => "bg-success",
+                                    "Đang xử lý" => "bg-warning text-dark",
+                                    "Đã hủy" => "bg-danger",
+                                    _ => "bg-secondary"
+                                };
+                            }
+                            <span class="badge @badgeClass">@order.Status</span>
+                        </td>
+                        <td class="text-center">
+                            <a asp-controller="AdminOrder" asp-action="OrderDetail"
+                               asp-route-id="@order.OrderId" class="btn btn-sm btn-info me-1">
+                                👁️ Xem
+                            </a>
+                            <form asp-action="Delete" asp-route-id="@order.OrderId" method="post" class="d-inline">
+                                <button type="submit" class="btn btn-sm btn-danger"
+                                        onclick="return confirm('Bạn có chắc muốn xóa đơn hàng này không?');">
+                                    🗑 Xóa
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" class="text-center text-muted">Không có đơn hàng nào.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

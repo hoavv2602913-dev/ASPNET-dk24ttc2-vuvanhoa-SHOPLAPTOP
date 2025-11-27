@@ -1,0 +1,50 @@
+﻿@model IEnumerable<LaptopBMT.Models.Product>
+
+@{
+    ViewData["Title"] = "Quản lý sản phẩm";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center text-primary mb-4">💻 Quản lý Laptop</h2>
+
+    <div class="text-end mb-3">
+        <a asp-action="Create" class="btn btn-success">➕ Thêm sản phẩm mới</a>
+    </div>
+
+    <table class="table table-hover align-middle">
+        <thead class="table-dark text-center">
+            <tr>
+                <th>Tên</th>
+                <th>Hãng</th>
+                <th>Giá</th>
+                <th>Ảnh</th>
+                <th>Mô tả</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr class="text-center">
+                    <td>@item.Name</td>
+                    <td>@item.Brand</td>
+                    <td class="text-success fw-bold">@item.Price.ToString("N0") ₫</td>
+                    <td>
+                        <img src="~/images/product_img/@item.ImageUrl"
+                             style="width:100px; height:70px; object-fit:cover;" />
+                    </td>
+                    <td class="text-start">@item.Description</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.ProductId" class="btn btn-outline-warning btn-sm me-1">✏️</a>
+                        <form asp-action="Delete" asp-route-id="@item.ProductId" method="post" class="d-inline">
+                            <button type="submit" class="btn btn-outline-danger btn-sm"
+                                    onclick="return confirm('Xóa sản phẩm này?')">
+                                🗑️
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

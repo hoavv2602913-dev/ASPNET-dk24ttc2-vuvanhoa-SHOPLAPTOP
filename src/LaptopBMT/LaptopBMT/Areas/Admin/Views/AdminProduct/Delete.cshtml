@@ -1,0 +1,48 @@
+﻿@model LaptopBMT.Models.Product
+
+@{
+    ViewData["Title"] = "Xóa Laptop";
+}
+
+<h2 class="text-center text-danger mb-4">🗑 Xóa Laptop</h2>
+
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card shadow border-0 p-4">
+            <div class="text-center mb-3">
+                @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                {
+                    <img src="~/images/product_img/@Model.ImageUrl" alt="@Model.Name" class="img-thumbnail" style="max-height: 200px;" />
+                }
+                else
+                {
+                    <img src="~/images/no-image.png" alt="Không có ảnh" class="img-thumbnail" style="max-height: 200px;" />
+                }
+            </div>
+
+            <h5 class="text-center text-primary">@Model.Name</h5>
+            <p class="text-center text-muted">Hãng: <strong>@Model.Brand</strong></p>
+
+            <table class="table table-bordered mt-3">
+                <tr>
+                    <th>Giá</th>
+                    <td>@Model.Price.ToString("N0") ₫</td>
+                </tr>
+                <tr>
+                    <th>Mô tả</th>
+                    <td>@Model.Description</td>
+                </tr>
+            </table>
+
+            <div class="alert alert-warning text-center mt-3">
+                <strong>Bạn có chắc chắn muốn xóa sản phẩm này không?</strong>
+            </div>
+
+            <form asp-action="DeleteConfirmed" method="post" class="text-center mt-4">
+                <input type="hidden" asp-for="ProductId" />
+                <button type="submit" class="btn btn-danger px-4 me-2">🗑 Xóa</button>
+                <a asp-action="Index" class="btn btn-secondary px-4">⬅ Quay lại</a>
+            </form>
+        </div>
+    </div>
+</div>

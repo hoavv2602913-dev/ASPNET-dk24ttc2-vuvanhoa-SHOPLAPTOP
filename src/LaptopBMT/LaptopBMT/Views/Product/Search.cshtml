@@ -1,0 +1,32 @@
+﻿@model List<LaptopBMT.Models.Product>
+
+@{
+    ViewData["Title"] = "Kết quả tìm kiếm";
+}
+
+<h2>Kết quả tìm kiếm cho: "<strong>@ViewBag.Keyword</strong>"</h2>
+
+@if (!Model.Any())
+{
+    <p class="text-danger mt-3">Không tìm thấy sản phẩm nào phù hợp.</p>
+}
+else
+{
+    <div class="row mt-4">
+        @foreach (var p in Model)
+        {
+            <div class="col-md-3 mb-4">
+                <div class="card shadow-sm">
+                    <img src="@p.ImageUrl" class="card-img-top" style="height:180px; object-fit:contain;" />
+                    <div class="card-body">
+                        <h5 class="card-title">@p.Name</h5>
+                        <p class="text-danger fw-bold">@p.Price.ToString("N0") đ</p>
+                        <a asp-controller="ProductDetail" asp-action="Detail" asp-route-id="@p.ProductId" class="btn btn-primary btn-sm">
+                            Xem chi tiết
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+}

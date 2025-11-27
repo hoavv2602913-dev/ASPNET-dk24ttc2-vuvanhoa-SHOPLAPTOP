@@ -1,0 +1,32 @@
+﻿@model IEnumerable<LaptopBMT.Models.Order>
+
+<h2>Danh sách đơn hàng của bạn</h2>
+<hr />
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã đơn</th>
+            <th>Ngày đặt</th>
+            <th>Tổng tiền</th>
+            <th>Trạng thái</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>#@order.OrderId</td>
+                <td>@order.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>@order.TotalAmount.ToString("N0") đ</td>
+                <td>@order.Status</td>
+                <td>
+                    <a href="/Order/Details/@order.OrderId" class="btn btn-sm btn-primary">
+                        Xem chi tiết
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
