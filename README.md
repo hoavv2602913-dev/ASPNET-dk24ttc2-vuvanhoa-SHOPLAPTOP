@@ -31,7 +31,11 @@
 > Sinh viên chịu trách nhiệm toàn bộ quá trình **thiết kế** và **xây dựng website bán laptop**.
 
 ---
-> Cập nhật tạo thêm các thư mục con trong thư mục thesis.
+### Tài khoản Demo
+| Vai trò |Tài khoản | Mật khẩu |
+|---------|-------------------|----------|
+| **Admin** | `admin` | `123` |
+| **User** | `hoavv` | `123` |
 ---
 **Báo cáo cập nhật
 
