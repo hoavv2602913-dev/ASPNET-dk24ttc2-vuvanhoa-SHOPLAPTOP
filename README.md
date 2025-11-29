@@ -48,7 +48,7 @@
 1. Mở **SQL Server Management Studio (SSMS)**.
 2. Restore file Database backup `DBShopLaptopBMT.bak` trong thư mục gốc.
 ###  Cấu hình kết nối
-Mở `appsettings.json` và cập nhật `ConnectionStrings` nếu cần:
+Mở `appsettings.json` và cập nhật `ConnectionStrings` theo Server name đã cài đặt trước đó:
 ```json
  "DefaultConnection": "Server=(localdb)\\SQLEXPRESS;Database=LaptopBMT;Trusted_Connection=True;TrustServerCertificate=True;"
 ```
