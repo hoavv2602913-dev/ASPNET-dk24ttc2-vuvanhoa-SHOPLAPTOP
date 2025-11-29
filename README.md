@@ -31,11 +31,28 @@
 > Sinh viên chịu trách nhiệm toàn bộ quá trình **thiết kế** và **xây dựng website bán laptop**.
 
 ---
+
+## 🚀 Hướng dẫn cài đặt và chạy
+
+###  Yêu cầu hệ thống
+- **.NET 5.0 SDK**
+- **SQL Server** (LocalDB hoặc SQL Server 2019+)
+- **Visual Studio 2019/2022** hoặc **VS Code**
+
 ### Tài khoản Demo
 | Vai trò |Tài khoản | Mật khẩu |
 |---------|-------------------|----------|
 | **Admin** | `admin` | `123` |
 | **User** | `hoavv` | `123` |
+### Cấu hình Database
+1. Mở **SQL Server Management Studio (SSMS)**.
+2. Restore file Database backup `DBShopLaptopBMT.bak` trong thư mục gốc.
+###  Cấu hình kết nối
+Mở `appsettings.json` và cập nhật `ConnectionStrings` nếu cần:
+```json
+ "DefaultConnection": "Server=(localdb)\\SQLEXPRESS;Database=LaptopBMT;Trusted_Connection=True;TrustServerCertificate=True;"
+```
+
 ---
 **Báo cáo cập nhật
 
@@ -44,7 +61,7 @@
 > Ngày cập nhật: ** 20/10/2025 : Thực hành sử dụng Bootstrap để tạo giao diện trang Web cơ bản **.  
 > Ngày cập nhật: ** 21/10/2025 : Thực hành sử dụng SQL Server tạo các bảng dữ liệu Sản phẩm, Người dùng, cập nhật báo cáo chuyên đề.  
 > Ngày cập nhật: ** 28/10/2025 : Thực hành tạo các chức năng giao diện, thêm, sửa sản phẩm lưu vào CSDL **.  
-> Ngày cập nhật: ** 8/11/2025 : Thực hành tạo các chức năng giao diện đặt hàng lưu vào CSDL **.  
+> Ngày cập nhật: ** 08/11/2025 : Thực hành tạo các chức năng giao diện đặt hàng lưu vào CSDL **.  
 > Ngày cập nhật: ** 12/11/2025 : Upload code lên /src **.  
 > Ngày cập nhật: ** 21/11/2025 : Upload BC CĐ ASPNET VuVanHoa_170124242_DK24TTC2 lên /progress-report **.  
 ---
