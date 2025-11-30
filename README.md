@@ -6,7 +6,7 @@
 ---
 
 ## 💡 Chủ đề
-**Xây dựng website bán Laptop**
+ ## Xây dựng website bán Laptop
 
 ---
 
