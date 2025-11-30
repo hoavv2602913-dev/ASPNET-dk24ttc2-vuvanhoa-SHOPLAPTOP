@@ -6,7 +6,7 @@
 ---
 
 ## 💡 Chủ đề
-**Xây dựng website bán Laptop**
+ ## Xây dựng website bán Laptop
 
 ---
 
@@ -14,7 +14,7 @@
 
 | Họ và tên     | Lớp       | Cơ sở ngành                                             | Giảng viên hướng dẫn |
 |----------------|------------|-------------------------------------------------------|-----------------------|
-| **Vũ Văn Hòa** | DK24TTC2   | ASPNET-dk24ttc2-vuvanhoav-SHOPLAPTOP                  | TS. Đoàn Phước Miền  |
+| **Vũ Văn Hòa** | DK24TTC2   | ASPNET-dk24ttc2-vuvanhoa-SHOPLAPTOP                  | TS. Đoàn Phước Miền  |
 
 ---
 
