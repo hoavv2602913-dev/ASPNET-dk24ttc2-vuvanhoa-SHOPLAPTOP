@@ -38,7 +38,7 @@
 - **.NET 5.0 SDK**
 - **SQL Server** (LocalDB hoặc SQL Server 2019+)
 - **Visual Studio 2019/2022** hoặc **VS Code**
-
+- SQL Server Management Studio (SSMS)   
 ### Tài khoản Demo
 | Vai trò |Tài khoản | Mật khẩu |
 |---------|-------------------|----------|
