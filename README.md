@@ -46,7 +46,8 @@
 | **User** | `hoavv` | `123` |
 ### Cấu hình Database
 1. Mở **SQL Server Management Studio (SSMS)**.
-2. Restore file Database backup `DBShopLaptopBMT.bak` trong thư mục gốc.
+2. Restore file Database backup `DBShopLaptopBMT.bak` trong thư mục src
+/LaptopBMT.
 ###  Cấu hình kết nối
 Mở `appsettings.json` và cập nhật `ConnectionStrings` theo Server name đã cài đặt trước đó:
 ```json
